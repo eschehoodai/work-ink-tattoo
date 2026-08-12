@@ -37,13 +37,13 @@ export const WhyUs: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-20">
-          <span className="text-xs font-mono-tag text-brand-gray uppercase tracking-mega block mb-3">
+          <span className="text-xs sm:text-sm font-mono-tag text-brand-gray uppercase tracking-widest block mb-3">
             [ ÜBER MICH ]
           </span>
-          <h2 className="font-headline text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-widest text-white mb-6">
+          <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-bold uppercase tracking-wider text-white mb-6">
             ÜBER MICH
           </h2>
-          <div className="h-1 w-16 bg-white mx-auto" />
+          <div className="h-1 w-20 bg-white mx-auto" />
         </div>
 
         {/* Feature Cards Grid */}
@@ -56,7 +56,7 @@ export const WhyUs: React.FC = () => {
                 className="group bg-black border border-white/10 p-8 sm:p-10 transition-all duration-300 hover:border-white/40 hover:-translate-y-1 relative"
               >
                 {/* Number Badge */}
-                <div className="absolute top-6 right-6 text-xs font-mono-tag text-brand-gray/40 group-hover:text-white transition-colors">
+                <div className="absolute top-6 right-6 text-xs sm:text-sm font-mono-tag text-brand-gray/40 group-hover:text-white transition-colors">
                   // {item.id}
                 </div>
 
@@ -66,13 +66,13 @@ export const WhyUs: React.FC = () => {
                 </div>
 
                 {/* Card Content */}
-                <h3 className="font-headline text-xl font-bold uppercase tracking-wider text-white mb-2">
+                <h3 className="font-headline text-xl sm:text-2xl font-bold uppercase tracking-wider text-white mb-2">
                   {item.title}
                 </h3>
-                <div className="text-xs font-mono-tag text-brand-gray uppercase tracking-widest mb-4">
+                <div className="text-xs sm:text-sm font-mono-tag text-brand-gray uppercase tracking-widest mb-4">
                   {item.subtitle}
                 </div>
-                <p className="text-brand-light text-sm leading-relaxed font-light">
+                <p className="text-brand-light text-base leading-relaxed font-normal">
                   {item.description}
                 </p>
 
@@ -87,13 +87,13 @@ export const WhyUs: React.FC = () => {
         <div className="mt-16 bg-black/60 border border-white/10 p-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
           <div className="flex items-center space-x-3">
             <CheckSquare className="w-5 h-5 text-white flex-shrink-0" />
-            <span className="text-xs font-mono-tag uppercase tracking-wider text-brand-light">
+            <span className="text-xs sm:text-sm font-mono-tag uppercase tracking-wider text-brand-light font-medium">
               Erstberatung & Nachsorge-Empfehlungen inklusive
             </span>
           </div>
           <a
             href="#anfahrt"
-            className="text-xs font-mono-tag uppercase tracking-widest text-white hover:underline flex items-center gap-1"
+            className="text-xs sm:text-sm font-mono-tag uppercase tracking-widest text-white hover:underline flex items-center gap-1 font-bold"
           >
             Studio in Zittau besuchen &rarr;
           </a>

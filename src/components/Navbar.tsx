@@ -52,10 +52,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
               />
             </div>
             <div className="flex flex-col">
-              <span className="font-headline text-xl md:text-2xl font-black tracking-widest uppercase leading-none">
+              <span className="font-display text-xl sm:text-2xl font-bold tracking-wider uppercase leading-none">
                 WORK INK
               </span>
-              <span className="text-[10px] font-mono-tag tracking-mega text-brand-gray uppercase mt-1">
+              <span className="text-[11px] font-mono-tag tracking-widest text-brand-gray uppercase mt-1">
                 TATTOO STUDIO • ZITTAU
               </span>
             </div>
@@ -67,7 +67,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-xs uppercase font-mono-tag tracking-widest text-brand-light hover:text-white transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-white hover:after:w-full after:transition-all"
+                className="text-sm uppercase font-mono-tag font-semibold tracking-widest text-brand-light hover:text-white transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-white hover:after:w-full after:transition-all"
               >
                 {link.name}
               </a>
@@ -78,15 +78,15 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
           <div className="hidden md:flex items-center space-x-4">
             <button
               onClick={onOpenBooking}
-              className="bg-white text-black px-5 py-2.5 text-xs font-mono-tag font-semibold uppercase tracking-widest hover:bg-gray-200 transition-colors border border-white"
+              className="bg-white text-black px-6 py-3 text-xs sm:text-sm font-mono-tag font-bold uppercase tracking-widest hover:bg-gray-200 transition-colors border border-white"
             >
               Termin Buchen
             </button>
             <a
               href="tel:+4915140010158"
-              className="border border-white/40 text-white px-4 py-2.5 text-xs font-mono-tag uppercase tracking-widest hover:border-white hover:bg-white/10 transition-all flex items-center gap-2"
+              className="border border-white/40 text-white px-5 py-3 text-xs sm:text-sm font-mono-tag font-semibold uppercase tracking-widest hover:border-white hover:bg-white/10 transition-all flex items-center gap-2"
             >
-              <Phone className="w-3.5 h-3.5" />
+              <Phone className="w-4 h-4" />
               <span>+49 151 40010158</span>
             </a>
           </div>

@@ -26,8 +26,9 @@ export default {
         }
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
         headline: ['Montserrat', 'sans-serif'],
+        display: ['"Cinzel Decorative"', 'serif'],
         mono: ['"JetBrains Mono"', 'monospace'],
       },
       letterSpacing: {

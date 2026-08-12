@@ -153,23 +153,23 @@ export const Gallery: React.FC<GalleryProps> = ({ onSelectDesignForBooking }) =>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="text-xs font-mono-tag text-brand-gray uppercase tracking-mega block mb-3">
+          <span className="text-xs sm:text-sm font-mono-tag text-brand-gray uppercase tracking-widest block mb-3">
             [ PORTFOLIO SHOWCASE ]
           </span>
-          <h2 className="font-headline text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-widest text-white mb-6">
+          <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-bold uppercase tracking-wider text-white mb-6">
             MEINE ARBEITEN
           </h2>
-          <div className="h-1 w-16 bg-white mx-auto mb-10" />
+          <div className="h-1 w-20 bg-white mx-auto mb-10" />
 
           {/* Category Filter Chips */}
-          <div className="flex flex-wrap justify-center gap-2 max-w-3xl mx-auto">
+          <div className="flex flex-wrap justify-center gap-2.5 max-w-3xl mx-auto">
             {categories.map((cat) => (
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
-                className={`px-4 py-2 text-xs font-mono-tag uppercase tracking-widest transition-all ${
+                className={`px-5 py-2.5 text-xs sm:text-sm font-mono-tag font-semibold uppercase tracking-widest transition-all ${
                   activeCategory === cat
-                    ? 'bg-white text-black border border-white font-bold'
+                    ? 'bg-white text-black border border-white font-bold shadow-md'
                     : 'bg-black text-brand-light border border-white/20 hover:border-white/60 hover:text-white'
                 }`}
               >
@@ -198,7 +198,7 @@ export const Gallery: React.FC<GalleryProps> = ({ onSelectDesignForBooking }) =>
               {/* Hover Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-6">
                 <div className="flex justify-between items-start">
-                  <span className="bg-black/90 text-white border border-white/30 text-[10px] font-mono-tag tracking-widest px-2.5 py-1 uppercase">
+                  <span className="bg-black/90 text-white border border-white/30 text-xs font-mono-tag tracking-widest px-3 py-1 uppercase font-medium">
                     {item.category}
                   </span>
                   <div className="w-8 h-8 bg-white text-black flex items-center justify-center">
@@ -207,10 +207,10 @@ export const Gallery: React.FC<GalleryProps> = ({ onSelectDesignForBooking }) =>
                 </div>
 
                 <div>
-                  <h3 className="font-headline text-lg font-bold text-white uppercase tracking-wider mb-1">
+                  <h3 className="font-headline text-xl font-bold text-white uppercase tracking-wider mb-1">
                     {item.title}
                   </h3>
-                  <p className="text-xs font-mono-tag text-brand-gray tracking-wide">
+                  <p className="text-xs sm:text-sm font-mono-tag text-brand-gray tracking-wide">
                     {item.placement}
                   </p>
                 </div>
@@ -254,8 +254,8 @@ export const Gallery: React.FC<GalleryProps> = ({ onSelectDesignForBooking }) =>
             {/* Modal Content */}
             <div className="flex flex-col justify-between py-2">
               <div>
-                <div className="inline-flex items-center gap-2 border border-white/20 px-3 py-1 bg-black text-[10px] font-mono-tag text-brand-gray uppercase tracking-widest mb-4">
-                  <Tag className="w-3 h-3 text-white" />
+                <div className="inline-flex items-center gap-2 border border-white/20 px-3 py-1 bg-black text-xs font-mono-tag text-brand-gray uppercase tracking-widest mb-4">
+                  <Tag className="w-3.5 h-3.5 text-white" />
                   <span>{selectedImage.category}</span>
                 </div>
 
@@ -263,11 +263,11 @@ export const Gallery: React.FC<GalleryProps> = ({ onSelectDesignForBooking }) =>
                   {selectedImage.title}
                 </h3>
 
-                <div className="text-xs font-mono-tag text-brand-gray mb-6">
-                  PLATZIERUNG: <span className="text-white">{selectedImage.placement}</span>
+                <div className="text-xs sm:text-sm font-mono-tag text-brand-gray mb-6">
+                  PLATZIERUNG: <span className="text-white font-medium">{selectedImage.placement}</span>
                 </div>
 
-                <p className="text-brand-light text-sm leading-relaxed mb-8 font-light border-l-2 border-white pl-4">
+                <p className="text-brand-light text-base sm:text-lg leading-relaxed mb-8 font-normal border-l-2 border-white pl-4">
                   {selectedImage.description}
                 </p>
               </div>
@@ -279,7 +279,7 @@ export const Gallery: React.FC<GalleryProps> = ({ onSelectDesignForBooking }) =>
                     setSelectedImage(null);
                     onSelectDesignForBooking(title);
                   }}
-                  className="w-full bg-white text-black py-4 font-mono-tag font-bold uppercase text-xs tracking-widest hover:bg-neutral-200 transition-colors flex items-center justify-center gap-2"
+                  className="w-full bg-white text-black py-4 font-mono-tag font-bold uppercase text-xs sm:text-sm tracking-widest hover:bg-neutral-200 transition-colors flex items-center justify-center gap-2 shadow-md"
                 >
                   <Calendar className="w-4 h-4" />
                   <span>Tattoo wie dieses anfragen</span>
@@ -288,7 +288,7 @@ export const Gallery: React.FC<GalleryProps> = ({ onSelectDesignForBooking }) =>
 
                 <button
                   onClick={() => setSelectedImage(null)}
-                  className="w-full border border-white/30 text-brand-gray hover:text-white py-3 font-mono-tag text-xs uppercase tracking-widest text-center transition-colors"
+                  className="w-full border border-white/30 text-brand-gray hover:text-white py-3 font-mono-tag text-xs sm:text-sm uppercase tracking-widest text-center transition-colors font-medium"
                 >
                   Zurück zur Galerie
                 </button>
