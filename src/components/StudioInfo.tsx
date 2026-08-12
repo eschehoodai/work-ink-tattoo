@@ -110,54 +110,53 @@ export const StudioInfo: React.FC = () => {
             </a>
           </div>
 
-          {/* Right Column: Stylized Dark Map Preview Container */}
+          {/* Right Column: Interactive Real Map Container */}
           <div className="relative">
-            <div className="border border-white/20 bg-black p-4 relative overflow-hidden group">
-              {/* Map Canvas Visual Placeholder / Embed */}
-              <div className="relative w-full h-[450px] bg-neutral-900 border border-white/10 overflow-hidden flex flex-col justify-between p-6">
-                {/* Background Blueprint Grid Lines */}
-                <div className="absolute inset-0 opacity-20 bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] bg-[size:32px_32px]" />
+            <div className="border border-white/20 bg-black p-3 sm:p-4 relative overflow-hidden group shadow-2xl">
+              {/* Top status bar */}
+              <div className="flex justify-between items-center bg-[#181818] border border-white/10 px-4 py-2.5 mb-3">
+                <div className="flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                  <span className="text-xs font-mono-tag text-white uppercase tracking-widest font-bold">
+                    LIVE KARTE & LOCATION
+                  </span>
+                </div>
+                <span className="text-[11px] font-mono-tag text-brand-gray uppercase hidden sm:inline">
+                  Innere Weberstraße 30, Zittau
+                </span>
+              </div>
 
-                {/* Dark Stylized Map Graphic */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="relative flex flex-col items-center">
-                    {/* Pulsing Target Marker */}
-                    <div className="relative flex items-center justify-center mb-3">
-                      <div className="w-12 h-12 bg-white/10 rounded-full animate-ping absolute" />
-                      <div className="w-8 h-8 bg-white text-black border-2 border-black flex items-center justify-center z-10 shadow-2xl">
-                        <MapPin className="w-5 h-5" />
-                      </div>
+              {/* Map Iframe Container */}
+              <div className="relative w-full h-[450px] bg-neutral-900 border border-white/10 overflow-hidden group">
+                <iframe
+                  title="Studio Standort Innere Weberstraße 30 Zittau"
+                  src="https://maps.google.com/maps?q=Innere%20Weberstra%C3%9Fe%2030,%2002763%20Zittau&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                  className="w-full h-full border-0"
+                  style={{
+                    filter: 'invert(90%) hue-rotate(180deg) contrast(120%) grayscale(20%)'
+                  }}
+                  loading="lazy"
+                  allowFullScreen
+                />
+
+                {/* Overlay Badge & Action */}
+                <div className="absolute bottom-4 left-4 right-4 z-10 flex flex-col sm:flex-row gap-2 justify-between items-center pointer-events-none">
+                  <div className="bg-black/90 backdrop-blur-md border border-white/20 px-4 py-2.5 pointer-events-auto shadow-lg w-full sm:w-auto">
+                    <div className="font-display font-bold text-xs sm:text-sm text-white uppercase tracking-wider">
+                      WORK INK TATTOO
                     </div>
-                    <div className="bg-black/90 border border-white px-5 py-2.5 text-center shadow-2xl">
-                      <div className="font-display font-bold text-sm text-white uppercase tracking-wider">
-                        WORK INK TATTOO
-                      </div>
-                      <div className="text-xs font-mono-tag text-brand-gray mt-0.5">
-                        Innere Weberstraße 30, Zittau
-                      </div>
+                    <div className="text-[11px] font-mono-tag text-brand-gray">
+                      Innere Weberstraße 30, 02763 Zittau
                     </div>
                   </div>
-                </div>
-
-                {/* Top Overlay Badge */}
-                <div className="relative z-10 flex justify-between items-center">
-                  <span className="bg-black/90 border border-white/20 px-3 py-1 text-xs font-mono-tag text-white uppercase tracking-widest">
-                    ZITTAU ZENTRUM
-                  </span>
-                  <span className="text-xs font-mono-tag text-brand-gray uppercase">
-                    51.897° N, 14.806° E
-                  </span>
-                </div>
-
-                {/* Bottom Overlay Action */}
-                <div className="relative z-10">
                   <a
                     href={mapsUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block text-center bg-black/90 hover:bg-white hover:text-black border border-white/40 text-white text-xs sm:text-sm font-mono-tag font-bold uppercase tracking-widest py-3.5 transition-colors"
+                    className="pointer-events-auto w-full sm:w-auto bg-white text-black hover:bg-neutral-200 border border-white px-4 py-2.5 text-xs font-mono-tag font-bold uppercase tracking-widest transition-colors shadow-lg flex items-center justify-center gap-2"
                   >
-                    Google Maps Karte Öffnen &rarr;
+                    <Navigation className="w-3.5 h-3.5" />
+                    <span>In Google Maps öffnen</span>
                   </a>
                 </div>
               </div>
