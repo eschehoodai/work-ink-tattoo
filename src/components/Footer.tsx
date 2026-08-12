@@ -16,14 +16,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLegal }) => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-white/10">
           {/* Col 1: Brand Info */}
           <div className="md:col-span-2 space-y-4">
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 rounded-full border border-white/30 overflow-hidden bg-black flex items-center justify-center">
-                <img
-                  src="/images/logo/work-ink-tattoo-studio-zittau-logo.jpg"
-                  alt="Work-Ink Tattoo Studio Zittau Logo"
-                  className="w-full h-full object-cover"
-                />
-              </div>
+            <div className="flex items-center">
               <span className="font-display text-2xl sm:text-3xl font-bold tracking-wider uppercase text-white">
                 WORK INK TATTOO
               </span>

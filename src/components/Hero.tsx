@@ -40,7 +40,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
 
         {/* Subtitle */}
         <p className="font-sans text-xl sm:text-2xl md:text-3xl text-neutral-200 max-w-3xl mx-auto font-normal leading-relaxed mb-12">
-          Dein Tattoo Studio in Zittau – Individuelle Kunst auf deiner Haut.
+          Dein Tattoo Studio in Zittau.<br />
+          Individuelle Kunst auf deiner Haut.
         </p>
 
         {/* Action Buttons */}

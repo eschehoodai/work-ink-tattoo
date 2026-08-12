@@ -42,15 +42,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
           {/* Brand Logo */}
           <a
             href="#"
-            className="group flex items-center space-x-3 text-white transition-opacity hover:opacity-90"
+            className="group flex items-center text-white transition-opacity hover:opacity-90"
           >
-            <div className="w-10 h-10 rounded-full border border-white/30 overflow-hidden bg-black flex items-center justify-center group-hover:border-white transition-colors">
-              <img
-                src="/images/logo/work-ink-tattoo-studio-zittau-logo.jpg"
-                alt="Work-Ink Tattoo Studio Zittau Logo"
-                className="w-full h-full object-cover"
-              />
-            </div>
             <div className="flex flex-col">
               <span className="font-display text-xl sm:text-2xl font-bold tracking-wider uppercase leading-none">
                 WORK INK
