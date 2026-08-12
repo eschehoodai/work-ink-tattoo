@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="de"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Work Ink Tattoo | Zittau</title>
+<meta content="Dein Tattoo Studio in Zittau – Individuelle Kunst auf deiner Haut." name="description"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              black: '#0a0a0a',
+              dark: '#171717',
+              gray: '#737373',
+              light: '#f5f5f5',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="typography">
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700;900&display=swap');
+    body {
+      background-color: #000000;
+      color: #ffffff;
+    }
+  </style>
+<style data-purpose="hero-bg">
+    .hero-bg {
+      background-image: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.9)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuBa9sppXUb2CML4oV0Wwbvy7WiTeQs3m-ElKpmRM2w2z-Dcd606dKSjWKHAV2cBh7gFdnJHCJs1VgT6F3txF4TQRMSHc-yjcML2KX2p4WgpexzFPNNyup2jTzyLv0LEqs0B1Yd6yE1jaUprApP0JrSMcWgU1wMS-jaDHviZ5U_hG5XRNZViX3G8bGOpUr_dox0nXdiXPUY_hNPR0u5KCFkSoUMrQiLgbHJ8sskpGNL1q8iClpAMOmjO');
+      background-size: cover;
+      background-position: center;
+    }
+    .contact-bg {
+      background-image: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.7)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuAP5eF0_kCS7DnlSlPpFE2R0dbKbd5K5UAYCw0FaTXs-N6rddGUSZ6DRHnB2KQ_W9y9znCx9So9F-MilMPPkFsQVqClocV0DLiD2q00nJiqaU7JstCX-pkE6uPImCVAtqvNAlh0JnSpezppDtDvvtUbG-KduT7bMuAnRZv1jAObrii2T7o8yc0gHF9GqHtMcTG3YF168b0CgZ-lBJlGJ2hx9p5dIoZr-k13ljrjZoTGRs_Zk4EYI83w');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body class="font-sans antialiased flex flex-col min-h-screen">
+<!-- BEGIN: MainHeader -->
+<header class="fixed w-full top-0 z-50 bg-black/90 backdrop-blur-sm border-b border-white/10">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<!-- Logo -->
+<div class="flex-shrink-0">
+<a class="font-serif text-2xl font-bold tracking-widest uppercase" href="#">Work Ink</a>
+</div>
+<!-- Desktop Navigation -->
+<nav class="hidden md:flex space-x-8">
+<a class="text-brand-light hover:text-white transition-colors text-sm uppercase tracking-wide" href="#galerie">Galerie</a>
+<a class="text-brand-light hover:text-white transition-colors text-sm uppercase tracking-wide" href="#ueber-uns">Über mich</a>
+<a class="text-brand-light hover:text-white transition-colors text-sm uppercase tracking-wide" href="#anfahrt">Anfahrt</a>
+<a class="text-brand-light hover:text-white transition-colors text-sm uppercase tracking-wide" href="#kontakt">Kontakt</a>
+</nav>
+<!-- Desktop CTA -->
+<div class="hidden md:flex">
+<a class="border border-white text-white px-6 py-2 rounded hover:bg-white hover:text-black transition-all font-semibold uppercase text-sm tracking-wider" href="tel:+4915140010158">Anrufen</a>
+</div>
+<!-- Mobile Menu Button -->
+<div class="md:hidden flex items-center">
+<button aria-label="Menu" class="text-white hover:text-gray-300 focus:outline-none" type="button">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</div>
+</div>
+</div>
+</header>
+<!-- END: MainHeader -->
+<main class="flex-grow">
+<!-- BEGIN: Hero Section -->
+<section class="hero-bg h-screen min-h-[600px] flex items-center justify-center pt-20">
+<div class="max-w-4xl mx-auto px-4 text-center">
+<h1 class="font-serif text-5xl md:text-7xl font-black mb-6 tracking-tight uppercase leading-tight">Work Ink Tattoo</h1>
+<p class="text-lg md:text-2xl text-brand-light mb-10 max-w-2xl mx-auto font-light">Dein Tattoo Studio in Zittau – Individuelle Kunst auf deiner Haut.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<a class="bg-white text-black px-8 py-4 rounded font-bold uppercase tracking-wide hover:bg-gray-200 transition-colors" href="#booking">Jetzt Termin buchen</a>
+<a class="border border-white text-white px-8 py-4 rounded font-bold uppercase tracking-wide hover:bg-white/10 transition-colors" href="tel:+4915140010158">Jetzt anrufen: +49 151 40010158</a>
+</div>
+</div>
+</section>
+<!-- END: Hero Section -->
+<!-- BEGIN: Why Us Section -->
+<section class="py-20 bg-brand-dark" id="ueber-uns">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="font-serif text-3xl md:text-4xl font-bold uppercase tracking-widest mb-4">Über mich</h2>
+<div class="h-1 w-20 bg-white mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Feature Card 1 -->
+<div class="bg-black border border-white/10 p-8 text-center rounded">
+<div class="w-16 h-16 mx-auto mb-6 bg-white/5 rounded-full flex items-center justify-center">
+<svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<h3 class="text-xl font-bold mb-3 uppercase">Hygiene &amp; Standards</h3>
+<p class="text-brand-gray text-sm leading-relaxed">Höchste Sauberkeit und strikte Einhaltung aller hygienischen Vorgaben für deine Sicherheit.</p>
+</div>
+<!-- Feature Card 2 -->
+<div class="bg-black border border-white/10 p-8 text-center rounded">
+<div class="w-16 h-16 mx-auto mb-6 bg-white/5 rounded-full flex items-center justify-center">
+<svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<h3 class="text-xl font-bold mb-3 uppercase">Custom Designs</h3>
+<p class="text-brand-gray text-sm leading-relaxed">Jedes Tattoo ist ein Unikat. Ich entwerfe Motive, die genau zu dir und deinen Vorstellungen passen.</p>
+</div>
+<!-- Feature Card 3 -->
+<div class="bg-black border border-white/10 p-8 text-center rounded">
+<div class="w-16 h-16 mx-auto mb-6 bg-white/5 rounded-full flex items-center justify-center">
+<svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<h3 class="text-xl font-bold mb-3 uppercase">Erfahrener Artist</h3>
+<p class="text-brand-gray text-sm leading-relaxed">Jahrelange Erfahrung in verschiedenen Stilen, meisterhaftes Handwerk und individuelle Beratung.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Why Us Section -->
+<!-- BEGIN: Portfolio Section -->
+<section class="py-20 bg-black" id="galerie">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="font-serif text-3xl md:text-4xl font-bold uppercase tracking-widest mb-4">Arbeiten</h2>
+<div class="h-1 w-20 bg-white mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+<!-- Portfolio Item (Repeated for visual effect) -->
+<div class="aspect-square overflow-hidden group">
+<img alt="Fineline Tattoo" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-80 group-hover:opacity-100 grayscale hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxkb4Vf25HrE_zZ3J3JSfO7TojBhpoqYttZakYDeXzhDXk1ALLFr5AvKzyoNnujIp2WENxyfvBWVWWk1wHL1vyVblCLn_UfMhp8rlt8rvB6mzLenMm9g8oLdTRxTB0VITf6pllh64lZ8EeTcqvx13AFZidgCUZSxfUQ1k7ouOfnZ5Cd7BGDKt8bNw2XmpBuqVKK02eRA5TB6vurKqtQorMfhlOelHYMZsGscN0jTjtytXyCCsD11zt"/>
+</div>
+<div class="aspect-square overflow-hidden group hidden sm:block">
+<img alt="Fineline Tattoo" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-80 group-hover:opacity-100 grayscale hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxkb4Vf25HrE_zZ3J3JSfO7TojBhpoqYttZakYDeXzhDXk1ALLFr5AvKzyoNnujIp2WENxyfvBWVWWk1wHL1vyVblCLn_UfMhp8rlt8rvB6mzLenMm9g8oLdTRxTB0VITf6pllh64lZ8EeTcqvx13AFZidgCUZSxfUQ1k7ouOfnZ5Cd7BGDKt8bNw2XmpBuqVKK02eRA5TB6vurKqtQorMfhlOelHYMZsGscN0jTjtytXyCCsD11zt"/>
+</div>
+<div class="aspect-square overflow-hidden group hidden lg:block">
+<img alt="Fineline Tattoo" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-80 group-hover:opacity-100 grayscale hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxkb4Vf25HrE_zZ3J3JSfO7TojBhpoqYttZakYDeXzhDXk1ALLFr5AvKzyoNnujIp2WENxyfvBWVWWk1wHL1vyVblCLn_UfMhp8rlt8rvB6mzLenMm9g8oLdTRxTB0VITf6pllh64lZ8EeTcqvx13AFZidgCUZSxfUQ1k7ouOfnZ5Cd7BGDKt8bNw2XmpBuqVKK02eRA5TB6vurKqtQorMfhlOelHYMZsGscN0jTjtytXyCCsD11zt"/>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Portfolio Section -->
+<!-- BEGIN: Contact & Booking Section -->
+<section class="contact-bg py-20 relative" id="kontakt">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+<!-- Contact Info & Map -->
+<div id="anfahrt">
+<h2 class="font-serif text-3xl font-bold uppercase tracking-widest mb-8">Studio &amp; Anfahrt</h2>
+<div class="mb-8 space-y-4">
+<p class="text-lg flex items-start gap-3">
+<svg class="w-6 h-6 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span>Innere Weberstraße 30<br/>02763 Zittau</span>
+</p>
+<p class="text-lg flex items-center gap-3">
+<svg class="w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<a class="hover:underline" href="tel:+4915140010158">+49 151 40010158</a>
+</p>
+</div>
+<!-- Map Placeholder -->
+<div class="w-full h-64 bg-gray-800 border border-white/20 flex items-center justify-center mb-6">
+<span class="text-brand-gray uppercase text-sm tracking-wider">Karte (Platzhalter)</span>
+</div>
+<a class="inline-block border border-white text-white px-6 py-3 rounded hover:bg-white hover:text-black transition-colors font-bold uppercase text-sm tracking-wider w-full text-center" href="https://maps.google.com/?q=Innere+Weberstraße+30,+02763+Zittau" rel="noopener noreferrer" target="_blank">Route in Google Maps planen</a>
+</div>
+<!-- Booking Form -->
+<div class="bg-black/80 backdrop-blur p-8 border border-white/10 rounded" id="booking">
+<h2 class="font-serif text-3xl font-bold uppercase tracking-widest mb-6">Buchungsanfrage</h2>
+<form action="#" class="space-y-6" method="POST">
+<div>
+<label class="block text-sm font-medium text-brand-light uppercase mb-2" for="name">Name</label>
+<input class="mt-1 block w-full bg-transparent border-b border-white/30 text-white focus:border-white focus:ring-0 px-0 py-2 placeholder-gray-500" id="name" name="name" placeholder="Dein voller Name" required="" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-brand-light uppercase mb-2" for="phone">Telefonnummer</label>
+<input class="mt-1 block w-full bg-transparent border-b border-white/30 text-white focus:border-white focus:ring-0 px-0 py-2 placeholder-gray-500" id="phone" name="phone" placeholder="Für Rückfragen" required="" type="tel"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-brand-light uppercase mb-2" for="idea">Tattoo Idee &amp; Stelle</label>
+<textarea class="mt-1 block w-full bg-transparent border-b border-white/30 text-white focus:border-white focus:ring-0 px-0 py-2 placeholder-gray-500" id="idea" name="idea" placeholder="Beschreibe kurz dein Wunschmotiv..." required="" rows="4"></textarea>
+</div>
+<button class="w-full bg-white text-black px-6 py-4 rounded font-bold uppercase tracking-wide hover:bg-gray-200 transition-colors mt-8" type="submit">Anfrage Senden</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Contact & Booking Section -->
+</main>
+<!-- BEGIN: Footer -->
+<footer class="bg-brand-dark py-12 border-t border-white/10">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="font-serif text-xl font-bold tracking-widest uppercase">
+        Work Ink
+      </div>
+<div class="flex space-x-6 text-sm uppercase tracking-wider text-brand-gray">
+<a class="hover:text-white transition-colors" href="#">Impressum</a>
+<a class="hover:text-white transition-colors" href="#">Datenschutz</a>
+</div>
+<div class="flex space-x-4">
+<!-- Social Icons Placeholders -->
+<a class="text-brand-gray hover:text-white transition-colors" href="#">
+<span class="sr-only">Instagram</span>
+<svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="text-brand-gray hover:text-white transition-colors" href="#">
+<span class="sr-only">Facebook</span>
+<svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path></svg>
+</a>
+</div>
+</div>
+</footer>
+<!-- END: Footer -->
+<!-- BEGIN: Mobile Fixed Bottom Bar -->
+<div class="fixed bottom-0 left-0 right-0 p-4 bg-black/90 backdrop-blur border-t border-white/10 md:hidden z-50">
+<a class="block w-full bg-white text-black py-4 rounded text-center font-bold uppercase tracking-wide" href="tel:+4915140010158">
+      Jetzt Anrufen
+    </a>
+</div>
+<!-- END: Mobile Fixed Bottom Bar -->
+<!-- Spacer for mobile bottom bar so content isn't hidden -->
+<div class="h-20 md:hidden"></div>
+</body></html>
