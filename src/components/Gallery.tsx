@@ -191,7 +191,7 @@ export const Gallery: React.FC<GalleryProps> = ({ onSelectDesignForBooking }) =>
               <img
                 src={item.image}
                 alt={item.title}
-                className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105 opacity-85 group-hover:opacity-100 filter grayscale group-hover:grayscale-0"
+                className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
                 loading="lazy"
               />
 
